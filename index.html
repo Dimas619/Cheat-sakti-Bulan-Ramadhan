@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAMADHAN HACK</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://i.pinimg.com/236x/6b/58/87/6b58872a4b8d579c2be92a0741c2886d.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-box {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .menu-box h2 {
+        color: #333;
+    }
+
+    .menu-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu-list li {
+        margin-bottom: 10px;
+    }
+
+    .btn-run {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-run:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="menu-box">
+    <h2>CHEAT MENU SPESIAL BULAN RAMADHAN</h2>
+    <ul class="menu-list">
+        <li><input type="checkbox" id="anti-lapar"> <label for="anti-lapar">Anti Lapar</label></li>
+        <li><input type="checkbox" id="hack-waktu"> <label for="hack-waktu">Hack Waktu</label></li>
+        <li><input type="checkbox" id="fast-eat"> <label for="fast-eat">Fast Eat</label></li>
+        <li><input type="checkbox" id="anti-haus"> <label for="anti-haus">Anti Haus</label></li>
+        <li><input type="checkbox" id="auto-buka"> <label for="auto-buka">Auto Buka</label></li>
+        <li><input type="checkbox" id="auto-sahur"> <label for="auto-sahur">Auto Sahur</label></li>
+        <li><input type="checkbox" id="anti-sahur"> <label for="anti-nafsu">Anti Nafsu</label></li>
+    </ul>
+    <input type="text" id="nama" placeholder="Enter Name">
+    <button class="btn-run" onclick="jalankanMenu()">GO HACK</button>
+</div>
+
+<script>
+    function jalankanMenu() {
+        // Menyimpan nama yang dimasukkan pengguna
+        var nama = document.getElementById('nama').value;
+
+        // Redirect ke halaman lain
+        window.location.href = "https://dimas619.github.io/lmaoo/";
+
+        // Menyimpan data menu yang dipilih oleh pengguna (opsional)
+        var menuDipilih = [];
+        var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+        checkboxes.forEach(function(checkbox) {
+            menuDipilih.push(checkbox.labels[0].textContent);
+        });
+
+        // Menyimpan data menu dan nama ke local storage (opsional)
+        localStorage.setItem('nama', nama);
+        localStorage.setItem('menuDipilih', JSON.stringify(menuDipilih));
+    }
+</script>
+
+</body>
+</html>
